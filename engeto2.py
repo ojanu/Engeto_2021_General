@@ -98,3 +98,5 @@ else:
             3. Musi obsahovat cislice
         """
     )
+
+# Zmena
