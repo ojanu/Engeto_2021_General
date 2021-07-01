@@ -61,7 +61,7 @@ birth_year = int(input('YEAR of BIRTH: '))
 print('=' * 40)
 email = input('EMAIL: ')
 print('=' * 40)
-password = input('PASSWORD: ')
+password = input('PASSWORD (min. 8 char.): ')
 print('=' * 100)
 
 # Zkotroluj, jestli je uživatel starší než 15 let
@@ -82,16 +82,6 @@ if "@" not in email:
 # - má aspoň 8 znaků
 if len(password) < 8:
     print("Password must have min. 8 characters, ending..")
-    exit()
-
-# - nezačíná ani nekončí číslem
-if password[0].isnumeric() or password[-1].isnumeric():
-    print("Password must start and end with a letter, ending..")
-    exit()
-
-# - a obsahuje písmena i čísla
-if password.isalpha or password.isnumeric:
-    print("Password must contain at least one number and one letter")
     exit()
 
 # Poděkuj uživateli použitím jeho jména a informuj jej/jí o provedení rezervace
